@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackforchange.teamBsissa.istethofyproject.Client.MapClient">
+
+    <RelativeLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/TF_location"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/edittextserchMap"
+
+            android:textColor="#8F707070"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/B_search"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/TF_location"
+            android:onClick="onClick"
+            android:text="@string/buttonSearchMap"
+            android:background="@drawable/backgroundtext"
+            tools:ignore="RtlCompat" />
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/B_hopistals"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            tools:context="com.example.priyanka.mapsdemo.MapsActivity"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/B_hopistals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TF_location"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="2dp"
+            android:onClick="onClick"
+            android:text="@string/ButtonHopitals"
+            android:background="@drawable/backgroundtext"
+            android:layout_alignParentLeft="true" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavView_Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/bottombar"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </android.support.design.widget.BottomNavigationView>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

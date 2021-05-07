@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="55dp"
+        tools:context="com.hackforchange.teamBsissa.istethofyproject.LoginActivity"
+        android:background="@drawable/u"
+        >
+
+
+
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icons8coeuravecpouls96" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISTETHOFY"
+            android:layout_gravity="center"
+            android:textSize="27dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="90dp"
+            android:hint="@string/EmailAddComm"
+            android:padding="16dp"
+            android:inputType="textEmailAddress"
+
+            android:background="@drawable/backgroundtext"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/PasswordAddComm"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:singleLine="true"
+
+            android:background="@drawable/backgroundtext"
+            />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/SingIn"
+            android:padding="20dp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#ffff"
+            android:background="@drawable/button"
+            />
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@null"
+            android:text="@string/ButtonRegisterLogin"
+            android:textAllCaps="false"
+            android:textColor="#F5F5F5"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

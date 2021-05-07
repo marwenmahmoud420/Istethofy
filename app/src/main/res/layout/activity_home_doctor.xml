@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackforchange.teamBsissa.istethofyproject.Client.HomeClient">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/doctorgpnetherlands" />
+
+    <Button
+        android:id="@+id/Hdoc"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/btnhomeclient"
+        android:text="@string/WelcomeDoctor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:text="Istethofy"
+        android:textColor="#BA000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="75dp"
+
+        android:src="@drawable/icons8coeuravecpouls96" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="400dp"
+        android:text="@string/HeartHome"
+        android:textColor="#383838"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="400dp"
+        android:text="@string/LungsHome"
+        android:textColor="#383838"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+
+
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/Lungs"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:layout_marginStart="35dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginLeft="35dp" />
+
+
+        <android.support.design.widget.FloatingActionButton
+
+            android:id="@+id/Heart"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:backgroundTint="#FFFFFF"
+
+            app:maxImageSize="100dp"
+            app:useCompatPadding="false" />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/heart"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginLeft="240dp" />
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/lungs"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="240dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recordimg"
+        android:layout_marginTop="350dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottomNavView_Bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bottombar"
+            app:menu="@menu/bottom_navigation_menu2">
+
+
+        </android.support.design.widget.BottomNavigationView>
+    </RelativeLayout>
+</RelativeLayout>

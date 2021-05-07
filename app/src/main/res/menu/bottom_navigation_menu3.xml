@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="@string/AddCommercial" />
+
+    <item
+        android:id="@+id/nav_message"
+        android:icon="@drawable/ic_verified_user_black_24dp"
+        android:title="@string/VerifyDoc" />
+
+
+
+    <item
+        android:id="@+id/nav_tip"
+        android:icon="@drawable/ic_people_black_24dp"
+        android:title="@string/AllUsers" />
+</menu>

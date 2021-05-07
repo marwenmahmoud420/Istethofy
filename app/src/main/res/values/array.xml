@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions">
+        <item>Mahdia</item>
+        <item>Tunis</item>
+        <item>Ben Arous</item>
+        <item>Soussa</item>
+        <item>Mestir</item>
+        <item>Safax</item>
+        <item>Benzart</item>
+        <item>Zaghwen</item>
+        <item>Ariana</item>
+        <item>Manouba</item>
+        <item>Beja</item>
+        <item>Tozur</item>
+        <item>Gabes</item>
+        <item>Gafsa</item>
+        <item>Tataouin</item>
+        <item>Jandouba</item>
+        <item>Kairawen</item>
+        <item>Sidi Bouzid</item>
+        <item>Gasserine</item>
+        <item>Gebelli</item>
+        <item>Kef</item>
+        <item>Mednine</item>
+        <item>Nabeul</item>
+        <item>Sialiana</item>
+    </string-array>
+
+
+    <string-array name="roles">
+        <item>Docteur</item>
+        <item>Client</item>
+    </string-array>
+</resources>

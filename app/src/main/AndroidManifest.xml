@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hackforchange.teamBsissa.istethofyproject">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icons8coeuravecpouls96"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.Client_localisation" android:label="Map"
+            android:theme="@style/WithBarAction"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.AddComm" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.HistoriqueAdmin" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.VerifDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.HomeClient" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.MapClient" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.ProfileClient" />
+        <activity
+            android:name="com.hackforchange.teamBsissa.istethofyproject.Client.ChatClient"
+            android:label="Messages"
+            android:theme="@style/WithBarAction" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.HistoriqueClient" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Commercial.AddDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Commercial.AllDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.HomeDoctor" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.ProfilDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.ChatDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.HistoriqueDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.Patients" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.MainActivity" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.RegisterActivity" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.ListDoctors"
+            android:label="Les Docteurs"
+            android:theme="@style/WithBarAction" />/>
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.DoctorDetails" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.reording" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Client.reordingHeart" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.VerifDetailsDoc" />
+
+        <service android:name="com.hackforchange.teamBsissa.istethofyproject.recordings.RecordingService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.hackforchange.teamBsissa.istethofyproject"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <service android:name="com.hackforchange.teamBsissa.istethofyproject.recordings.RecordingHeartService" />
+
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.lungdoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.heartDoc" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.Patientdetails" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.ClientDetails" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.CommercialDetails" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Admin.DoctorDetailss" />
+        <activity android:name="com.hackforchange.teamBsissa.istethofyproject.Doctor.patientChat" />
+    </application>
+
+</manifest>
